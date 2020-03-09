@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bcsCircleImage"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/bcslogo"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bcsTitle"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/bcsCircleImage"
+                android:layout_alignParentTop="true"
+                android:text="Hello"
+                android:textSize="30sp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/bcsCircleImage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bcsSubTitle"
+                android:layout_marginLeft="15dp"
+                android:text="Hello2222"
+                android:layout_toRightOf="@+id/bcsCircleImage"
+                android:layout_below="@+id/bcsTitle"
+                android:layout_marginStart="15dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
